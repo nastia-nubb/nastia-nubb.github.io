@@ -1,0 +1,83 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.container,
+.navbar {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.padd {
+    padding: 0 2rem 0 2rem;
+}
+
+/* Плавні зміни властивостей лінків */
+a {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+/*************************************/
+/* Зміни CSS коду розпочинати звідси */
+/*************************************/
+
+section {
+    min-height: 100vh;    /* !!! Тимчасово для відладки !!! Висота секцій рівна висоті екрану */
+    padding: 50px 0;  /* Внітрішні відступи зверху та знизу у секціях <section> */
+}
+
+
+#s3, #s5 {
+    background-color: #e6e7e8; 
+}
+
+
+#s2, #s4 {
+    background-color: black; 
+}
+
+div {
+  animation-duration: 2s;
+  animation-name: bounceIn;
+}
+
+#page-top h1 {
+   font-size: 50px;
+   color:white;
+}
+
+a {
+    color: #c00;  /* Колір текстових лінків */
+}
+
+a:focus,
+a:hover {
+    color: #c00;  /* Колір текстових лінків для псевдокласів */
+}
+
+/**************************************/
+/* Зміна властивостей для breakpoints */
+/**************************************/
+
+@media screen and (max-width:575px) {
+    .container,
+    .navbar {
+        padding-left: 15px;    /* Для Small додати відступи */
+        padding-right: 15px;   /* зліва та справа у .container та .navbar */
+    }
+
+    /* Приклад зміни відступів зверху, знизу для секцій на Small екранах */
+
+    section {
+        padding: 25px 0;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+
+}
