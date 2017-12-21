@@ -1,0 +1,49 @@
+/****************************************/
+
+/* Приклад коду властивостей для header */
+
+/****************************************/
+
+/* Для закоментованих властивостей можна */
+
+/* вказати власні значення та зняти коментар */
+
+header {
+    background-color: #999;
+    background-image: url("../img/m-photo_.jpg");
+    background-size: cover;
+    color: #fff;
+    text-align: right;
+    width: 100%;
+    height: 100vh;
+}
+
+header .row {
+    height: 100vh;
+    justify-content: center;
+    /* Контейнери всередині header .row центруються по основній осі (горизонтально) */
+    align-items: center;
+    /* Контейнер всередині header .row центрується по поперечній осі (вертикально) */
+}
+
+header h1 {
+    text-align: center;
+}
+
+@media screen and (max-width:992px) and (orientation: portrait) {
+    header .row {
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 0 20px 40px;
+    }
+    header h1 {
+        text-align: right;
+    }
+}
+
+@media screen and (max-width:575px) {
+
+    header {
+        text-align: left;
+    }
+}
